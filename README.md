@@ -1,5 +1,7 @@
 # Palo Alto Networks MCP Server Suite
 
+[![smithery badge](https://smithery.ai/badge/@DynamicEndpoints/paloalto-mcp-server)](https://smithery.ai/server/@DynamicEndpoints/paloalto-mcp-server)
+
 A comprehensive suite of Model Context Protocol (MCP) servers for managing Palo Alto Networks firewalls and services through a unified API interface.
 
 ## Table of Contents
@@ -52,6 +54,15 @@ The Palo Alto Networks MCP Server Suite provides a modular approach to firewall 
 
 ## Installation
 
+### Installing via Smithery
+
+To install Palo Alto Networks MCP Server Suite for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@DynamicEndpoints/paloalto-mcp-server):
+
+```bash
+npx -y @smithery/cli install @DynamicEndpoints/paloalto-mcp-server --client claude
+```
+
+### Manual Installation
 1. Clone the repository:
 ```bash
 git clone https://github.com/your-org/paloalto-mcp-servers.git
