@@ -1,0 +1,33 @@
+{
+	"inputs":[
+		{
+         "id": "panos_verify_ssl",
+         "type": "promptString",
+         "description": "Verify SSL certificates (true/false)",
+     	},
+	 	{
+         "id": "panos_api_base_url",
+         "type": "promptString",
+         "description": "Palo Alto Networks API Base URL (e.g., https://your-firewall.example.com/api)",
+    	},
+		{
+         "id": "panos_api_key",
+         "type": "promptString",
+         "description": "Palo Alto Networks API Key",
+         "password": true
+     	}
+	],
+	"servers": {
+		"paloalto-mcp": {
+			"type": "stdio",
+			"command": "node",
+			"args": ["build/index.js"],
+			"cwd": "${workspaceFolder}",
+			"env": {
+				"PANOS_VERIFY_SSL": "${input:panos_verify_ssl}",
+				"PANOS_API_KEY": "${input:panos_api_key}",
+				"PANOS_API_BASE_URL": "${input:panos_api_base_url}"
+			}
+		}
+	}
+}
