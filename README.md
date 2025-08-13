@@ -1,5 +1,6 @@
 # Palo Alto Networks MCP Server Suite
 
+[![CodeQL](https://github.com/peljoa/paloalto-mcp-server/actions/workflows/github-code-scanning/codeql/badge.svg?branch=main)](https://github.com/peljoa/paloalto-mcp-server/actions/workflows/github-code-scanning/codeql)
 [![smithery badge](https://smithery.ai/badge/@DynamicEndpoints/paloalto-mcp-server)](https://smithery.ai/server/@DynamicEndpoints/paloalto-mcp-server)
 
 A comprehensive suite of Model Context Protocol (MCP) servers for managing Palo Alto Networks firewalls and services through a unified API interface.
